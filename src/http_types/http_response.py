@@ -1,6 +1,7 @@
-from typing import Dict 
+from typing import Dict
+
 
 class HttpResponse:
-  def __init__(self, body: Dict = None, param: Dict = None) -> None:
-    self.body = body
-    self.param = param
+    def __init__(self, body: Dict, status_code: int) -> None:
+        self.body = body
+        self.status_code = status_code

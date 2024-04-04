@@ -10,10 +10,8 @@ class __DBConnectionHandler:
         )
         self.__engine = None
         self.session = None
-        print(self.__connection_string, "Loading ⚙️") 
     def connect_to_db(self) -> None:
-        self.__engine = create_engine(self.__connection_string)
-        print(self.__connection_string, "Running 🔥")   
+        self.__engine = create_engine(self.__connection_string) 
     def get_engine(self):
         return self.__engine
 
